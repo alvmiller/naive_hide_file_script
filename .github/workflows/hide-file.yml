@@ -22,6 +22,10 @@ jobs:
       run: |
         echo "Current commit hash value is ${{ github.sha }}"
 
+    - name: Set TERM (workaround)
+      run: |
+        $env:TERM = "xterm"
+
     - name: Install dependencies
       run: |
         echo 1
