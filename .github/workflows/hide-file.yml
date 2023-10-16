@@ -6,6 +6,9 @@ on:
   push:
     branches: [ "main" ]
 
+env:
+  CI: true
+
 permissions:
   contents: read
 
@@ -21,10 +24,6 @@ jobs:
     - name: Current commit hash
       run: |
         echo "Current commit hash value is ${{ github.sha }}"
-
-    - name: Set TERM (workaround)
-      run: |
-        $env:TERM = "xterm"
 
     - name: Install dependencies
       run: |
