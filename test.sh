@@ -2,7 +2,8 @@
 
 test_result=1
 
-reset
+#reset
+#clear
 
 echo 123 > 1.txt
 
