@@ -33,7 +33,6 @@ jobs:
     - name: Set permissions to script
       run: |
         chmod +x ./hide_file.sh
-        ./test.sh
 
     - name: Test with bash
       run: |
