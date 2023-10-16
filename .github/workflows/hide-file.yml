@@ -26,6 +26,15 @@ jobs:
       run: |
         echo 1
 
+    - name: Set permissions to test
+      run: |
+        chmod +x ./test.sh
+    
+    - name: Set permissions to script
+      run: |
+        chmod +x ./hide_file.sh
+        ./test.sh
+
     - name: Test with bash
       run: |
         ./test.sh
