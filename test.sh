@@ -15,7 +15,7 @@ test_result=1
 echo "$raw_data" > "$raw_data_file"
 
 #./hide_file.sh 1.txt 1.bin 1 d > /dev/null
-./hide_file.sh "$raw_data_file"t "$bin_data_file" 1 d
+./hide_file.sh "$raw_data_file" "$bin_data_file" 1 d
 test_result=$?
 #sleep "$sleep_time"
 rm "$raw_data_file"
