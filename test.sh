@@ -21,7 +21,7 @@ test_result=$?
 rm "$raw_data_file"
 rm -rf "$tmp_dir"
 if [ "$test_result" -ne 0 ]; then
-    echo Test(ENC):Failed
+    echo TestEnc:Failed
     exit 1
 fi
 
@@ -35,7 +35,7 @@ rm "$bin_data_file"
 rm "$raw_data_file"
 rm -rf "$tmp_dir"
 if [ "$test_result" -ne 0 ]; then
-    echo Test:Failed
+    echo TestDec:Failed
     exit 1
 fi
 
