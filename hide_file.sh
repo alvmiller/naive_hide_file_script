@@ -226,6 +226,8 @@ echo
 
 print_current_step "Check input parameters"
 
+# @TODO : Use getopts
+
 if [ $# -eq 0 ]; then
     echo_error "No parameters, use '--help' for info"
     print_fail_and_exit1
